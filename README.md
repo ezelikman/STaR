@@ -172,6 +172,19 @@ However, to use the v2 model code (no publicly released weights), the newest JAX
 
 To cite this repository:
 ```
+@inproceedings{
+  zelikman2022star,
+  title={{ST}aR: Bootstrapping Reasoning With Reasoning},
+  author={Eric Zelikman and Yuhuai Wu and Jesse Mu and Noah Goodman},
+  booktitle={Advances in Neural Information Processing Systems},
+  editor={Alice H. Oh and Alekh Agarwal and Danielle Belgrave and Kyunghyun Cho},
+  year={2022},
+  url={https://openreview.net/forum?id=_3ELRdg2sgI}
+}
+```
+
+To cite the base repository:
+```
 @misc{mesh-transformer-jax,
   author = {Wang, Ben},
   title = {{Mesh-Transformer-JAX: Model-Parallel Implementation of Transformer Language Model with JAX}},
