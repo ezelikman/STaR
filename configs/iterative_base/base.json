@@ -1,0 +1,43 @@
+{
+  "layers": 28,
+  "d_model": 4096,
+  "n_heads": 16,
+  "n_vocab": 50400,
+  "norm": "layernorm",
+  "pe": "rotary",
+  "pe_rotary_dims": 64,
+  "seq": 2048,
+  "cores_per_replica": 8,
+  "per_replica_batch": 1,
+  "gradient_accumulation_steps": 2,
+  "warmup_steps": 100,
+  "anneal_steps": 300000,
+  "lr": 1e-06,
+  "end_lr": 1e-06,
+  "weight_decay": 0.0,
+  "total_steps": 383500,
+  "tpu_size": 8,
+  "bucket": "checkpoint-bucket",
+  "model_dir": "full_qa_4",
+  "train_set": "qa_train_4.index",
+  "val_set": {
+    "index": "qa.val.index"
+  },
+  "eval_harness_tasks": [
+    "lambada",
+    "piqa",
+    "hellaswag",
+    "winogrande",
+    "mathqa",
+    "pubmedqa"
+  ],
+  "val_batches": 100,
+  "val_every": 20,
+  "ckpt_every": 20,
+  "keep_every": 10000,
+  "name": "full_6",
+  "wandb_project": "full_6",
+  "comment": "",
+  "target_save_folder": "commonsenseqa/iterative_full/iterative_full_0",
+  "target_save": "commonsenseqa/iterative_negative_fast/iterative_negative_fast_0/iterative_negative_fast_0.txt"
+}
